@@ -11,3 +11,24 @@ function processArray(array, simple) {
 processArray([4, 3, 1, 2, 7, 9, 5], function cure(x) {
   return x * x * x;
 });
+
+console.log("Use of IIFE");
+
+function declarationOfNamesInDB() {
+  console.log("SeniorDev changes");
+}
+
+declarationOfNamesInDB();
+// 8000 line....
+
+// function declarationOfNamesInDB() {
+//   console.log("Intern code");
+// }
+
+(function () {
+  function declarationOfNamesInDB() {
+    console.log("Intern changes");
+  }
+  console.log("Intern Code!!");
+  declarationOfNamesInDB();
+})();
