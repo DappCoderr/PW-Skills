@@ -32,3 +32,5 @@ declarationOfNamesInDB();
   console.log("Intern Code!!");
   declarationOfNamesInDB();
 })();
+
+console.log("Chaining of function");
