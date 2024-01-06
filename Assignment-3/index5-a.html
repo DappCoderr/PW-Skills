@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Sign Up</legend>
+        <br />
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          placeholder="Enter your First Name"
+          id="fname"
+          minlength="3"
+          max="20"
+          required
+        />
+        <br />
+        <br />
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          placeholder="Enter your Last Name"
+          id="lname"
+          minlength="3"
+          max="20"
+          required
+        />
+        <br />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" placeholder="amit@gmail.com" id="email" required />
+        <br />
+        <br />
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" required />
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          placeholder="Enter your Password"
+          id="password"
+          required
+        />
+        <br />
+        <br />
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          size="30"
+          placeholder="Enter your Confirm Password"
+          id="confirm-password"
+          required
+        />
+        <br />
+        <br />
+        <label for="age">Age</label>
+        <input
+          type="number"
+          max="100"
+          min="1"
+          placeholder="Enter your Age"
+          id="age"
+          required
+        />
+        <br />
+        <br />
+        <label>Gender</label>
+        <br />
+        <input type="radio" value="Male" required />
+        <label>Male</label>
+        <br />
+        <input type="radio" value="Female" required />
+        <label>Female</label>
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
