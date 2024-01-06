@@ -5,7 +5,7 @@
 Answer: HTML 5 provide several new features. some of them are list below -
 
 - `New Doc Type`: HTML5 simplifies and standardizes the document declaration for better compatibility.
-- `Semantic Elements`: HTML5 has provided semantic elements which helps you to structure your webpage easily like: <nav>, <header>, <main>, <footer>, <section>, <aside>, <article>, <time>, <mark>, <figure>, <progress>, <output>, <figcaption>.
+- `Semantic Elements`: HTML5 has provided semantic elements which helps you to structure your webpage easily like: `<nav>, <header>, <main>, <footer>, <section>, <aside>, <article>, <time>, <mark>, <figure>, <progress>, <output>, <figcaption>`.
 - `Multi-media Support`: You can easily add audio and video content without needing of third party plugin. Using <audio> <video> element.
 - `Canvas Support`: With <canvas> element, you can easily create dynamic and interactive graphics.
 - `GeoLocation API Support`: With the help of geo location web application can enable user location.
