@@ -4,3 +4,11 @@
 
 Answere: Index1.html
 ![Alt text](image.png)
+
+### Q2. Build an HTML page with multiple paragraph, each assigned a unique class name. Write css rules using class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and explained how you have named the class
+
+Answere:
+
+### Q3. Develop an HTML form with various input elements. Use CSS to style the form, including setting background colors for input files. Create a custom color palette for the form elements, and demonstrate how to apply opacity to one of the form sections.
+
+Answere:
