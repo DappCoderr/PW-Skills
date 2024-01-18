@@ -34,3 +34,8 @@ Answere: index6.html
 
 Answere: index7.html
 ![Alt text](image-8.png)
+
+### Q8. Create a simple list of items as mentioned in the below image.
+
+Answere: index8.html
+![Alt text](image-9.png)
