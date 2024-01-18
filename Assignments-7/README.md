@@ -28,3 +28,4 @@ Answere: index5.html
 ### Q6. Create a simple website as mentioned in the below image. You can get the assets by visiting
 
 Answere: index6.html
+![Alt text](image-7.png)
