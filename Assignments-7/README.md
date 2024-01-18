@@ -29,3 +29,8 @@ Answere: index5.html
 
 Answere: index6.html
 ![Alt text](image-7.png)
+
+### Q7. Create a simple webpage with a card similar to question number 2. The card must be semi-transparent as default and on hovering the card must be displayed clearly. Use Css opacity to achieve this output.
+
+Answere: index7.html
+![Alt text](image-8.png)
