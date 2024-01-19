@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Section</title>
+    <style>
+      body,
+      p,
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style: none;
+      }
+      .pricing_section {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        background-color: #f4f2fd;
+        box-sizing: border-box;
+      }
+      .card {
+        width: 240px;
+        height: fit-content;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding-top: 50px;
+        padding-left: 35px;
+      }
+      .price {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 12px 0;
+      }
+      .header_name h2 {
+        font-size: 32px;
+        font-weight: 700;
+        /* letter-spacing: 0em; */
+      }
+      .subscribe {
+        display: flex;
+        justify-content: center;
+        margin-left: -35px;
+      }
+      .btn {
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        border: solid 2px white;
+        padding: 10px 20px;
+        border-radius: 100px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 30px auto;
+      }
+      .dark {
+        background-color: #202842;
+        color: white;
+      }
+      .dark_btn {
+        background-color: white;
+        color: #202842;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pricing_section">
+      <div class="card">
+        <div class="card_wrapper">
+          <div class="card_details">
+            <div class="card_header">
+              <div class="header_name">
+                <h2>Free Plan</h2>
+                <p>For personal</p>
+              </div>
+              <div class="price">
+                <p>$0</p>
+              </div>
+            </div>
+            <div class="card_details">
+              <ul>
+                <li>✅ 4 users</li>
+                <li>✅ 10 Web mails</li>
+                <li>✅ Responsive Website</li>
+                <li>✅ Free SSL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="subscribe">
+            <button class="btn">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-------------//-------------->
+      <div class="card dark">
+        <div class="card_wrapper">
+          <div class="card_details">
+            <div class="card_header">
+              <div class="header_name">
+                <h2>Basic Plan</h2>
+                <p>For small business</p>
+              </div>
+              <div class="price">
+                <p>$29</p>
+              </div>
+            </div>
+            <div class="card_details">
+              <ul>
+                <li>✅ 4 users</li>
+                <li>✅ 10 Web mails</li>
+                <li>✅ Responsive Website</li>
+                <li>✅ Free SSL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="subscribe">
+            <button class="btn dark_btn">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-------------//-------------->
+      <div class="card">
+        <div class="card_wrapper">
+          <div class="card_details">
+            <div class="card_header">
+              <div class="header_name">
+                <h2>Pro Plan</h2>
+                <p>For enterprise</p>
+              </div>
+              <div class="price">
+                <p>$49</p>
+              </div>
+            </div>
+            <div class="card_details">
+              <ul>
+                <li>✅ 4 users</li>
+                <li>✅ 10 Web mails</li>
+                <li>✅ Responsive Website</li>
+                <li>✅ Free SSL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="subscribe">
+            <button class="btn">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
