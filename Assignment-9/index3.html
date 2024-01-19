@@ -9,6 +9,9 @@
         margin: 0;
         padding: 0;
       }
+      li {
+        list-style: none;
+      }
       .container {
         width: 100vw;
         height: 100vh;
@@ -18,7 +21,7 @@
       }
       .left {
         width: 50%;
-        background-color: rgb(248, 249, 245);
+        background-color: white;
       }
       .right {
         width: 50%;
@@ -26,12 +29,111 @@
       .right img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+      }
+      .left_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 30px 0;
+      }
+      .header_logo {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+      }
+      .irctc_logo {
+        width: 70px;
+        height: 70px;
+      }
+      .train_logo {
+        width: 70px;
+        height: 70px;
+      }
+      .header_container {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      .header_container_text p {
+        display: inline;
+        padding-left: 20px;
+      }
+      .header_container_button {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .header_container_button button {
+        background-color: white;
+        border: solid black 2px;
+        border-radius: 4px;
+        padding: 6px 10px;
+        cursor: pointer;
+        margin: 6px 0;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <section class="left"></section>
+      <section class="left">
+        <div class="left_wrapper">
+          <header>
+            <div class="header_logo">
+              <img
+                class="irctc_logo"
+                src="https://www.irctc.co.in/nget/assets/images/logo.png"
+              />
+              <img
+                class="train_logo"
+                src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+              />
+            </div>
+            <div class="header_container">
+              <div class="header_container_text">
+                <p>Ask Disha</p>
+                <p>Contact us</p>
+                <p>Alerts</p>
+              </div>
+              <div class="header_container_button">
+                <button>Login</button>
+                <button>Register</button>
+                <button>Agent Login</button>
+              </div>
+            </div>
+          </header>
+          <main>
+            <h2>India Railways</h2>
+            <span>Safety</span>
+            <span>Security</span>
+            <span>Punctuality</span>
+          </main>
+          <div class="book_ticket">
+            <button>Book Ticket</button>
+            <button>PNR Status</button>
+            <button>Charts / Vacancy</button>
+          </div>
+          <div class="journey_details">
+            <div class="city">
+              <p>From Bangalore to Jodhpur</p>
+            </div>
+            <div class="date">
+              <p>1 August Tatkal</p>
+            </div>
+          </div>
+          <div class="search_train">
+            <button>Search Train</button>
+          </div>
+        </div>
+      </section>
       <section class="right">
         <img
           src="https://www.irctc.co.in/nget/home_page_banner1.e6749c3d9698d1ac7608.jpg"
