@@ -164,7 +164,7 @@ for (var i = 0; i < 3; i++) {
 }
 ```
 
-`Answer: ACB`
+`Answer: 0`
 
 ## Problem 15
 
@@ -178,4 +178,4 @@ setTimeout(() => console.log("4"), 1000);
 console.log("5");
 ```
 
-`Answer: ACB`
+`Answer: 15423`
