@@ -20,11 +20,7 @@ function downloadFile(url) {
     setTimeout(() => {
       console.log("Downloading Completed");
       let downloadData = "DummyData";
-      if (downloadData) {
-        res(downloadData);
-      } else {
-        rej(downloadData);
-      }
+      res(downloadData);
     }, 4000);
   });
 }
@@ -35,11 +31,7 @@ function writeFile(downloadedData) {
     setTimeout(() => {
       console.log("Writing Completed");
       let fileName = "writing.txt";
-      if (fileName) {
-        res(fileName);
-      } else {
-        rej(fileName);
-      }
+      res(fileName);
     }, 2000);
   });
 }
@@ -50,27 +42,30 @@ function uploadFile(fileName, newURL) {
     setTimeout(() => {
       console.log("Uploading Completed");
       let uploadResponse = "Uploaded SUCCESSFULLY";
-      if (uploadResponse) {
-        res(uploadResponse);
-      } else {
-        rej(uploadResponse);
-      }
+      res(uploadResponse);
     }, 3000);
   });
 }
 
-const downloader = downloadFile("www.google.com");
-downloader.then(
-  function fulfillHandler(downloadedData) {
-    const write = writeFile(downloadedData);
-    write.then(
-      function fulfillHandler(fileName) {
-        uploadFile(fileName, "www.drive.google.com");
-      },
-      function rejectionHandler() {}
-    );
-  },
-  function rejectionHandler(value) {
-    console.log(value);
-  }
-);
+// This will create callback hell
+
+// const downloader = downloadFile("www.google.com");
+// downloader.then(
+//   function fulfillHandler(downloadedData) {
+//     const write = writeFile(downloadedData);
+//     write.then(
+//       function fulfillHandler(fileName) {
+//         uploadFile(fileName, "www.drive.google.com");
+//       },
+//       function rejectionHandler() {}
+//     );
+//   },
+//   function rejectionHandler(value) {
+//     console.log(value);
+//   }
+// );
+
+downloadFile("www.google.com")
+  .then((downloadedData) => writeFile(downloadedData))
+  .then((fileName) => uploadFile(fileName, "www.drive.google.com"))
+  .then((value) => console.log(value));
