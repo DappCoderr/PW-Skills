@@ -6,11 +6,9 @@
     <title>IRCTC Ticket Booking</title>
     <style>
       * {
+        list-style: none;
         margin: 0;
         padding: 0;
-      }
-      li {
-        list-style: none;
       }
       .container {
         width: 100vw;
@@ -19,9 +17,66 @@
         flex-direction: row;
         overflow: hidden;
       }
-      .left {
-        width: 50%;
-        background-color: white;
+      nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      .navigation_logos {
+        display: flex;
+        gap: 20px;
+      }
+      .navigation_logos img {
+        height: 75px;
+        width: 75px;
+      }
+      .navigation_container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .navigation_container ul {
+        display: flex;
+        gap: 20px;
+        font-size: 15px;
+      }
+      .navigation_container li {
+        cursor: pointer;
+      }
+      .navigation_container button {
+        padding: 4px 7px;
+        border: 1px solid lightgray;
+        background-color: transparent;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .navigation_container .selected {
+        background-color: #fb792b;
+        border-color: #fb792b;
+        color: white;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: auto 0px;
+      }
+      main .main_title {
+        font-size: 40px;
+        margin: 20px 0px;
+      }
+      main .sub_main_title {
+        display: flex;
+        gap: 15px;
+        font-size: 27px;
+      }
+      .green_text {
+        color: green;
+      }
+      .orange_text {
+        color: orange;
+      }
+      .blue_text {
+        color: blue;
       }
       .right {
         width: 50%;
@@ -31,108 +86,136 @@
         height: 100%;
         object-fit: cover;
       }
-      .left_wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin: 30px 0;
-      }
-      .header_logo {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 20px;
-      }
-      .irctc_logo {
-        width: 70px;
-        height: 70px;
-      }
-      .train_logo {
-        width: 70px;
-        height: 70px;
-      }
-      .header_container {
+      .left {
         width: 50%;
-        height: 50%;
+        background-color: white;
+        padding: 50px 70px;
         display: flex;
         flex-direction: column;
-      }
-      .header_container_text p {
-        display: inline;
-        padding-left: 20px;
-      }
-      .header_container_button {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-      .header_container_button button {
-        background-color: white;
-        border: solid black 2px;
-        border-radius: 4px;
-        padding: 6px 10px;
-        cursor: pointer;
-        margin: 6px 0;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <section class="left">
-        <div class="left_wrapper">
-          <header>
-            <div class="header_logo">
-              <img
-                class="irctc_logo"
-                src="https://www.irctc.co.in/nget/assets/images/logo.png"
-              />
-              <img
-                class="train_logo"
-                src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
-              />
-            </div>
-            <div class="header_container">
-              <div class="header_container_text">
-                <p>Ask Disha</p>
-                <p>Contact us</p>
-                <p>Alerts</p>
+        <!-- Navigation container -->
+        <nav>
+          <div class="navigation_logos">
+            <img
+              class="irctc_logo"
+              src="https://www.irctc.co.in/nget/assets/images/logo.png"
+            />
+            <img
+              class="train_logo"
+              src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+            />
+          </div>
+          <div class="navigation_container">
+            <ul>
+              <li>Ask Disha</li>
+              <li>Contact us</li>
+              <li>Alerts</li>
+            </ul>
+            <ul>
+              <li><button class="selected">Login</button></li>
+              <li><button class="selected">Register</button></li>
+              <li><button class="selected">Agent Login</button></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- main container -->
+        <main>
+          <!-- First Div -->
+          <div>
+            <h2 class="main_title">Indian Railways</h2>
+            <p class="sub_main_title">
+              <span class="green_text">Safety</span>
+              <span class="orange_text">Security</span>
+              <span class="blue_text">Punctuality</span>
+            </p>
+          </div>
+          <!-- Second Div -->
+          <div class="choose-container">
+            <button class="selected">Book Ticket</button>
+            <button class="selected">PNR Status</button>
+            <button class="selected">Charts / Vacancy</button>
+          </div>
+          <!-- Third Div -->
+          <div class="journey-detail-container">
+            <!-- First journey detail container -->
+            <div class="journey-details-section-container">
+              <div class="card_element">
+                <div class="card_element_image"></div>
+                <div class="card_element_select_option">
+                  <div class="drop_down">
+                    <span>From</span>
+                    <img src="#" />
+                  </div>
+                  <div class="choose_location">
+                    <h2>Bangalore</h2>
+                    <span>KSR - Bangalore</span>
+                  </div>
+                </div>
               </div>
-              <div class="header_container_button">
-                <button>Login</button>
-                <button>Register</button>
-                <button>Agent Login</button>
+              <!-- Second journey detail container -->
+              <div class="card_element">
+                <img src="#" alt="" />
+              </div>
+              <!-- Third journey detail container -->
+              <div class="card_element">
+                <div class="card_element_image"></div>
+                <div class="card_element_select_option">
+                  <div class="drop_down">
+                    <span>To</span>
+                    <img src="#" />
+                  </div>
+                  <div class="choose_location">
+                    <h2>Kasaragod</h2>
+                    <span>KSR - Kasaragod</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </header>
-          <main>
-            <h2>India Railways</h2>
-            <span>Safety</span>
-            <span>Security</span>
-            <span>Punctuality</span>
-          </main>
-          <div class="book_ticket">
-            <button>Book Ticket</button>
-            <button>PNR Status</button>
-            <button>Charts / Vacancy</button>
-          </div>
-          <div class="journey_details">
-            <div class="city">
-              <p>From Bangalore to Jodhpur</p>
+            <!-- Second journey detail container -->
+            <div class="journey-details-section-container">
+              <div class="card_element">
+                <div class="card_element_image"></div>
+                <div class="card_element_select_option">
+                  <div class="drop_down">
+                    <span>From</span>
+                    <img src="#" />
+                  </div>
+                  <div class="choose_location">
+                    <h2>Bangalore</h2>
+                    <span>KSR - Bangalore</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Second journey detail container -->
+              <div class="card_element">
+                <img src="#" alt="" />
+              </div>
+              <!-- Third journey detail container -->
+              <div class="card_element">
+                <div class="card_element_image"></div>
+                <div class="card_element_select_option">
+                  <div class="drop_down">
+                    <span>To</span>
+                    <img src="#" />
+                  </div>
+                  <div class="choose_location">
+                    <h2>Kasaragod</h2>
+                    <span>KSR - Kasaragod</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="date">
-              <p>1 August Tatkal</p>
-            </div>
           </div>
-          <div class="search_train">
-            <button>Search Train</button>
-          </div>
-        </div>
+          <!-- Fourth Div -->
+          <div class="journey-detail-container-two"></div>
+          <!-- Fourth Div -->
+          <button>Search Train <img src="#" alt="" /></button>
+        </main>
       </section>
       <section class="right">
         <img
