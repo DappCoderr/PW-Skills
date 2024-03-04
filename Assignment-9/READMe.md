@@ -29,4 +29,4 @@ Answer: index2.html
 
 Figma Link: (https://www.figma.com/file/0nqHmoAXQq6iy8BhfdaYkO/IRCTC-Website-Design-(Community)-(Copy)?type=design&node-id=0-1&mode=design&t=PfESPWwMDOOAwWEU-0)
 
-Answer:
+Answer:![Alt text](image-2.png)
